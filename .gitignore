@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Exclude editor folder and binary folder
+.vscode/
+bin/
