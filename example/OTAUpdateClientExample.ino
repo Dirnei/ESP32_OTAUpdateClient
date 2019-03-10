@@ -9,6 +9,11 @@ void setup()
     int counter = 0;
     Serial.begin(115200);
 
+    // if your device never connected to your AP then use the code below
+    // WiFi.begin("ssid", "password");
+
+    // if it was allready connected then it will use the last known connection.
+    // so you don't need to have this in your code
     WiFi.begin();
 
     Serial.println("Connect to WIFI");
