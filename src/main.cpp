@@ -28,14 +28,14 @@ void setup()
         delay(500);
     }
 
-    if (!updateClient.isUpdateAvailable("/version.txt", 0))
+    if (!updateClient.isUpdateAvailable("/version.json"))
     {
         Serial.println("No update available");
     }
     else
     {
         Serial.println("Updating...");
-        updateClient.update("/yourBinary.bin");
+        updateClient.update("/firmware.bin");
     }
 }
 
