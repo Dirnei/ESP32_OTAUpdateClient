@@ -1,4 +1,4 @@
-#include "OTAUpdateClient.h";
+#include <OTAUpdateClient.h>
 
 OTAUpdateClient::OTAUpdateClient(WiFiClient client, const char * host, int16_t port)
 {
@@ -106,7 +106,7 @@ void OTAUpdateClient::update(const char * filePath)
         Serial.println("Begin OTA update. This may take a while...");
         if (Update.begin(contentLength)) 
         {
-            size_t written = Update.writeStream(wifiClient);
+            Update.writeStream(wifiClient);
             if (Update.end()) 
             {
                 Serial.println("OTA done!");
@@ -131,6 +131,6 @@ void OTAUpdateClient::update(const char * filePath)
 }
 
 
-String OTAUpdateClient::getHeaderValue(String header, char * headerName) {
+String OTAUpdateClient::getHeaderValue(String header, const char * headerName) {
   return header.substring(strlen(headerName));
 }

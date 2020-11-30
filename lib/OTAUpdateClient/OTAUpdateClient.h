@@ -2,8 +2,8 @@
 #define _OTAUPDATECLIENT_
 
 #include <Arduino.h>
-#include <Update.h>;
-#include <WiFiClient.h>;
+#include <Update.h>
+#include <WiFiClient.h>
 #include <HTTPClient.h>
 
 class OTAUpdateClient {
@@ -18,6 +18,6 @@ class OTAUpdateClient {
         WiFiClient wifiClient;
         HTTPClient httpClient;
 
-        String getHeaderValue(String header, char * headerName);
+        String getHeaderValue(String header, const char * headerName);
 };
 #endif // _OTAUPDATECLIENT_
