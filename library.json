@@ -1,0 +1,23 @@
+{
+    "name": "ESP32 OTAUpdateClient",
+    "version": "1.0.2",
+    "description": "A OTA Update client to install new firmware from a webserver",
+    "keywords": "ESP32,OTA,Update",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/Dirnei/ESP32_OTAUpdateClient.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Christian Dirnhofer",
+        "email": "christian@dirnhofer.net",
+        "url": "https://www.dirnhofer.net"
+      }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/Dirnei/ESP32_OTAUpdateClient",
+    "frameworks": "arduino",
+    "platforms": "espressif32"
+  }
