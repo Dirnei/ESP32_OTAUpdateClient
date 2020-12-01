@@ -10,7 +10,7 @@ The client compares a `integer` value from a file on a webserver with a local in
 
 The easiest thing is to have a look at the `main.cpp` in the `src` folder. But you can also follow the description here.
 
-First you have to include the library header and create a new instance of the `OTAUpdateClient` class. It deas need a `WiFiClient`, the `address` to your webserver and the `port` your webserver is listening on.
+First you have to include the library header and create a new instance of the `OTAUpdateClient` class. It does need a `WiFiClient`, the `address` to your webserver and the `port` your webserver is listening on.
 
 > Only the base address is needed. The relative file path is specified alter on.
 
